@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tela de Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="main-container">
+      <div class="half-box spacing">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box spacing">
+        <label for="lastname">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+      </div>
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Login">
+      </div>
+      <div>
+        <form action="registro.html">
+          <input id="bnt-rgst" type="submit" value="Cadastre-se">
+        </form>
+      </div>
+    </div>
+  <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
